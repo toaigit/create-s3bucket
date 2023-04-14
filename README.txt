@@ -7,6 +7,11 @@ Basic S3 comman line
   aws s3 ls s3://mybucket
   aws s3 ls s3://mybucket --recursive
 
+  # remove all objects in the bucket
+  aws s3 rm s3://mybucket --recursive
+  # remove bucket - bucket must be empty
+  aws s3 rb s3://mybucket
+
   # copy a file to your desktop
   aws s3 cp s3://mybucket/test.txt test2.txt
   # copy a whole bucket to your desktop
